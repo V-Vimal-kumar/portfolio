@@ -19,10 +19,27 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically handle form submission
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 3000);
-    setFormData({ name: '', email: '', subject: '', message: '' });
+
+    const form = e.target as HTMLFormElement;
+    const formDataToSend = new FormData(form);
+
+    fetch('https://formsubmit.co/ajax/vimalthewarrior25@gmail.com', {
+      method: 'POST',
+      body: formDataToSend,
+      headers: {
+        Accept: 'application/json'
+      }
+    })
+      .then(response => {
+        if (response.ok) {
+          setIsSubmitted(true);
+          setFormData({ name: '', email: '', subject: '', message: '' });
+          setTimeout(() => setIsSubmitted(false), 5000);
+        } else {
+          alert('Something went wrong. Please try again.');
+        }
+      })
+      .catch(() => alert('Network error. Please try again.'));
   };
 
   const contactInfo = [
@@ -88,7 +105,6 @@ const Contact = () => {
                 </p>
               </div>
 
-              {/* Contact Details */}
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
@@ -112,7 +128,6 @@ const Contact = () => {
                 ))}
               </div>
 
-              {/* Social Links */}
               <div>
                 <h4 className="font-semibold text-slate-800 mb-4">Follow Me</h4>
                 <div className="flex gap-4">
@@ -138,24 +153,17 @@ const Contact = () => {
               </h3>
 
               {isSubmitted && (
-                <div className="mb-6 p-4 bg-green-100 text-green-800 rounded-lg flex items-center gap-2">
+                <div className="mb-6 p-4 bg-green-100 text-green-800 rounded-lg flex items-center gap-2 transition-all duration-300">
                   <CheckCircle size={20} />
                   <span>Thank you! Your message has been sent successfully.</span>
                 </div>
               )}
 
-              <form
-                action="https://formsubmit.co/vimalthewarrior25@gmail.com"
-                method="POST"
-                className="space-y-6"
-              >
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_next" value="https://vimalportfolio25.netlify.app/thank-you" />
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
-                      Name
-                    </label>
+                    <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">Name</label>
                     <input
                       type="text"
                       id="name"
@@ -168,9 +176,7 @@ const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
-                      Email
-                    </label>
+                    <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">Email</label>
                     <input
                       type="email"
                       id="email"
@@ -185,9 +191,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-2">
-                    Subject
-                  </label>
+                  <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-2">Subject</label>
                   <input
                     type="text"
                     id="subject"
@@ -201,9 +205,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">
-                    Message
-                  </label>
+                  <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">Message</label>
                   <textarea
                     id="message"
                     name="message"
