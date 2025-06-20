@@ -150,7 +150,7 @@ const Contact = () => {
                 className="space-y-6"
               >
                 <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_next" value="http://localhost:5173/thank-you" />
+                <input type="hidden" name="_next" value="https://vimalportfolio25.netlify.app/thank-you" />
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
