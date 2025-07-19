@@ -11,9 +11,11 @@ const Skills = () => {
     {
       title: 'Frontend',
       skills: [
-        { name: 'HTML', level: 90 },
-        { name: 'CSS', level: 85 },
-        { name: 'React.js', level: 80 }
+        { name: 'HTML', level: 98 },
+        { name: 'CSS', level: 95 },
+        { name: 'React.js', level: 85 },
+        { name: 'Tailwind', level: 75 }
+
       ]
     },
     {
@@ -26,7 +28,7 @@ const Skills = () => {
     {
       title: 'Database',
       skills: [
-        { name: 'MongoDB', level: 75 }
+        { name: 'MongoDB', level: 85 }
       ]
     }
   ];

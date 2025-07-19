@@ -46,8 +46,8 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      value: 'vimalthewarrior25@gmail.com',
-      link: 'mailto:vimalthewarrior25@gmail.com'
+      value: 'vimal25.official@gmail.com',
+      link: 'mailto:vimal25.official@gmail.com'
     },
     {
       icon: <Phone className="w-6 h-6" />,

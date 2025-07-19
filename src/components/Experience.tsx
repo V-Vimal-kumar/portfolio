@@ -7,7 +7,7 @@ const Experience = () => {
       type: 'Internship',
       title: 'Full Stack Development Internship',
       company: 'WebGen',
-      period: '02.07.2024 - 26.07.2024',
+      period: 'Jul 2024',
       location: 'Remote',
       description: [
         'Gained comprehensive knowledge about Front-end and Back-end development',
@@ -15,7 +15,21 @@ const Experience = () => {
         'Participated in solving complex development challenges during the internship',
         'Developed an E-commerce site as the final project, demonstrating full-stack capabilities'
       ],
-      technologies: ['React.js', 'Node.js', 'JavaScript', 'HTML/CSS', 'MongoDB']
+      technologies: ['React.js', 'Node.js', 'JavaScript', 'HTML/CSS']
+    },
+        {
+      type: 'Internship',
+      title: 'Full Stack Development',
+      company: 'Syncner',
+      period: 'Feb 2025 - Present',
+      location: 'Remote',
+      description: [
+        'Developing and maintaining full-stack web applications with the MERN stack.',
+        'Designed and implemented scalable RESTful APIs for smooth client-server communication.',
+        'Collaborating with teams to deliver robust, production-ready solutions.',
+        'Built several capstone projects and currently working on real-world applications using the MERN stack to solve practical problems.'
+      ],
+      technologies: ['React.js', 'Node.js', 'JavaScript', 'HTML/CSS', 'MongoDB', 'Express.js']
     }
   ];
 

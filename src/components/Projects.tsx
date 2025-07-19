@@ -5,22 +5,12 @@ const Projects = () => {
   const projects = [
     {
       title: 'Expense Tracker System',
-      period: 'Feb 2023 - May 2023',
-      description: 'Application that allows users to record, categorize, and analyze their spending, providing insights into their financial habits.',
+      period: 'Feb 2024 - May 2024',
+      description: 'Application that allows users to record, categorize, and analyze their spending with a user-friendly interface and real-time insights.',
       technologies: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
       image: 'https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=800',
       category: 'Full Stack',
-      github: 'https://github.com/V-Vimal-kumar/Training-Phase-2/tree/master/Expense%20Tracker',
-      demo: ''
-    },
-    {
-      title: 'Saving Big on Wheels',
-      period: 'Sep 2023 - Dec 2023',
-      description: 'Platform to buy second-hand cars where users can easily connect with past owners without any confusion.',
-      technologies: ['React.js', 'Node.js', 'MongoDB', 'CSS'],
-      image: 'https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'Web Platform',
-      github: 'https://github.com/V-Vimal-kumar/second-hand-car',
+      github: 'https://github.com/V-Vimal-kumar/Expense-Tracker',
       demo: ''
     },
     {
@@ -31,6 +21,16 @@ const Projects = () => {
       image: 'https://avinuty.ac.in/sites/avinuty.ac.in/files/styles/department_banner/public/2023-09/susan-q-yin-2JIvboGLeho-unsplash.jpg?itok=PmcUHCAn',
       category: 'Full Stack',
       github: 'https://github.com/V-Vimal-kumar/Training-Phase-1/tree/main/Level-20/BookShelf',
+      demo: ''
+    },
+     {
+      title: 'Learn Together',
+      period: 'Jun 2025 - Jul 2025',
+      description: 'Built a platform for learners to pair up and track progress with dynamic pairing logic, secure auth, and a responsive UI.',
+      technologies: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'Tailwind CSS'],
+      image: 'https://selectedfirms.co/public/assets/images/blog_cover_image/66978392_1708499485.webp',
+      category: 'Web Platform',
+      github: 'https://github.com/V-Vimal-kumar/Learn-Together',
       demo: ''
     }
   ];
