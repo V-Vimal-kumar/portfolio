@@ -6,7 +6,7 @@ const Skills = () => {
       title: 'Languages',
       skills: [
         { name: 'JavaScript', level: 85 },
-        { name: 'Java', level: 60 }      ]
+        { name: 'Java', level: 70 }      ]
     },
     {
       title: 'Frontend',
@@ -94,7 +94,9 @@ const Skills = () => {
                 'Team Collaboration',
                 'Agile Development',
                 'UI/UX Principles',
-                'Code Optimization'
+                'Code Optimization',
+                'Wordpress',
+                'Fast API'
               ].map((skill, index) => (
                 <span
                   key={index}

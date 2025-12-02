@@ -3,6 +3,23 @@ import { Calendar, MapPin, Briefcase } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
+
+
+    {
+      type: 'Internship',
+      title: 'Full Stack Development',
+      company: 'Syncner',
+      period: 'Feb 2025 - Present',
+      location: 'Remote',
+      description: [
+        "Developed key features for MockMeUp using the MERN stack.",
+        "Integrated Generative AI (Gemini) for automated question generation.",
+        "Worked with a 4-member cross-functional team using Agile & Git.",
+        "Enhanced reliability by fixing API/CORS issues and deploying on Render."
+      ]
+      ,
+      technologies: ['React.js', 'Node.js', 'JavaScript', 'Tailwind CSS', 'MongoDB', 'Express.js','Fast API']
+    },
     {
       type: 'Internship',
       title: 'Full Stack Development Internship',
@@ -16,20 +33,6 @@ const Experience = () => {
         'Developed an E-commerce site as the final project, demonstrating full-stack capabilities'
       ],
       technologies: ['React.js', 'Node.js', 'JavaScript', 'HTML/CSS']
-    },
-        {
-      type: 'Internship',
-      title: 'Full Stack Development',
-      company: 'Syncner',
-      period: 'Feb 2025 - Present',
-      location: 'Remote',
-      description: [
-        'Developing and maintaining full-stack web applications with the MERN stack.',
-        'Designed and implemented scalable RESTful APIs for smooth client-server communication.',
-        'Collaborating with teams to deliver robust, production-ready solutions.',
-        'Built several capstone projects and currently working on real-world applications using the MERN stack to solve practical problems.'
-      ],
-      technologies: ['React.js', 'Node.js', 'JavaScript', 'HTML/CSS', 'MongoDB', 'Express.js']
     }
   ];
 
@@ -109,8 +112,8 @@ const Experience = () => {
               Looking for New Opportunities
             </h3>
             <p className="text-slate-600 mb-6 max-w-2xl mx-auto">
-              I'm actively seeking internship and full-time opportunities where I can contribute 
-              my skills and continue growing as a developer. Let's connect and discuss how I can 
+              I'm actively seeking internship and full-time opportunities where I can contribute
+              my skills and continue growing as a developer. Let's connect and discuss how I can
               add value to your team.
             </p>
             <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
