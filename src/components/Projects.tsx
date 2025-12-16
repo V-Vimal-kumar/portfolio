@@ -3,25 +3,25 @@ import { Calendar, ExternalLink, Github } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
-   {
-  title: 'MockMeUp',
-  period: 'Aug 2025 - Nov 2025',
-  description:
-"AI-powered platform for generating interview questions, practicing mock interviews, and tracking progress.",  technologies: [
-    'React.js',
-    'Node.js',
-    'Express.js',
-    'MongoDB',
-    'Google Gemini API',
-    'FastAPI',
-    'Render'
-  ],
-  image: 'https://www.navigateforward.com/wp-content/uploads/2025/01/Image_AI_Interviews_Sm-scaled.jpg',
-  category: 'Full Stack',
-  github: '',    // add your repo link later
-  demo: 'https://mockmeup-zhm6.onrender.com'
-},
-     {
+    {
+      title: 'MockMeUp',
+      period: 'Aug 2025 - Nov 2025',
+      description:
+        "AI-powered platform for generating interview questions, practicing mock interviews, and tracking progress.", technologies: [
+          'React.js',
+          'Node.js',
+          'Express.js',
+          'MongoDB',
+          'Google Gemini API',
+          'FastAPI',
+          'Render'
+        ],
+      image: 'https://www.navigateforward.com/wp-content/uploads/2025/01/Image_AI_Interviews_Sm-scaled.jpg',
+      category: 'Full Stack',
+      github: '',    // add your repo link later
+      demo: 'https://mockmeup-zhm6.onrender.com'
+    },
+    {
       title: 'Learn Together',
       period: 'Jun 2025 - Jul 2025',
       description: 'Built a platform for learners to pair up and track progress with dynamic pairing logic, secure auth, and a responsive UI.',
@@ -31,7 +31,7 @@ const Projects = () => {
       github: 'https://github.com/V-Vimal-kumar/Learn-Together',
       demo: 'learn-together-weld.vercel.app'
     },
-       {
+    {
       title: 'Expense Tracker System',
       period: 'Feb 2024 - May 2024',
       description: 'Application that allows users to record, categorize, and analyze their spending with a user-friendly interface and real-time insights.',
@@ -131,10 +131,14 @@ const Projects = () => {
           </div>
 
           <div className="text-center mt-12">
-            <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
+            <button
+              onClick={() => window.open("https://github.com/V-Vimal-kumar", "_blank")}
+              className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
+            >
               View All Projects
             </button>
           </div>
+
         </div>
       </div>
     </section>

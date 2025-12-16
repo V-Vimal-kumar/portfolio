@@ -32,7 +32,7 @@ const Experience = () => {
         'Participated in solving complex development challenges during the internship',
         'Developed an E-commerce site as the final project, demonstrating full-stack capabilities'
       ],
-      technologies: ['React.js', 'Node.js', 'JavaScript', 'HTML/CSS']
+      technologies: ['React.js', 'Node.js', 'JavaScript', 'MongoDB', 'Express.js']
     }
   ];
 
@@ -116,9 +116,9 @@ const Experience = () => {
               my skills and continue growing as a developer. Let's connect and discuss how I can
               add value to your team.
             </p>
-            <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
+            {/* <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
               Get In Touch
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
