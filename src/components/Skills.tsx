@@ -99,7 +99,8 @@ const Skills = () => {
                 'UI/UX Principles',
                 'Code Optimization',
                 'Wordpress',
-                'Fast API'
+                'Fast API',
+                'AWS RDS'
               ].map((skill, index) => (
                 <span
                   key={index}

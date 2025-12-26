@@ -4,6 +4,16 @@ import { Calendar, ExternalLink, Github } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
+      title: 'Twitter Clone',
+      period: 'Dec 2025',
+      description: 'Built a Twitter-like social platform with posts, likes, comments, user profiles, and theme support in a responsive interface.',
+      technologies: ['Next.js', 'Node.js', 'MySQL', 'AWS RDS', 'Tailwind CSS'],
+      image: 'https://www.shutterstock.com/image-vector/twitter-new-logo-old-evolution-260nw-2337688957.jpg',
+      category: 'Social Media Platform',
+      github: 'https://github.com/V-Vimal-kumar/TwitterClone.git',
+      demo: 'https://twitter-clone-mu-mauve.vercel.app'
+    },
+    {
       title: 'MockMeUp',
       period: 'Aug 2025 - Nov 2025',
       description:
@@ -18,7 +28,7 @@ const Projects = () => {
         ],
       image: 'https://www.navigateforward.com/wp-content/uploads/2025/01/Image_AI_Interviews_Sm-scaled.jpg',
       category: 'Full Stack',
-      github: '',    // add your repo link later
+      github: 'https://github.com/One-to-Infinity-Team/MockMeUp-Frontend.git',
       demo: 'https://mockmeup-zhm6.onrender.com'
     },
     {
@@ -29,17 +39,7 @@ const Projects = () => {
       image: 'https://selectedfirms.co/public/assets/images/blog_cover_image/66978392_1708499485.webp',
       category: 'Web Platform',
       github: 'https://github.com/V-Vimal-kumar/Learn-Together',
-      demo: 'learn-together-weld.vercel.app'
-    },
-    {
-      title: 'Expense Tracker System',
-      period: 'Feb 2024 - May 2024',
-      description: 'Application that allows users to record, categorize, and analyze their spending with a user-friendly interface and real-time insights.',
-      technologies: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
-      image: 'https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'Full Stack',
-      github: 'https://github.com/V-Vimal-kumar/Expense-Tracker',
-      demo: ''
+      demo: 'https://learn-together-weld.vercel.app/'
     }
   ];
 
