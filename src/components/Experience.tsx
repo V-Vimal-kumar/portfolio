@@ -9,7 +9,7 @@ const Experience = () => {
       type: 'Internship',
       title: 'Full Stack Development',
       company: 'Syncner',
-      period: 'Feb 2025 - Present',
+      period: 'Feb 2025 - Dec 2025',
       location: 'Remote',
       description: [
         "Developed key features for MockMeUp using the MERN stack.",
